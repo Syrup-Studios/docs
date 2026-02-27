@@ -11,8 +11,11 @@ description: Shenanigans Intro Description
 **This will be a super awesome and informative page soon! trust**
 
 Download the Pack here:
+
 - [Modrinth](https://modrinth.com/modpack/shenanigans)
+
 - [Curseforge](https://www.curseforge.com/minecraft/modpacks/shenanigans-cf-edition) (usually takes longer for updates to be on)
+
 - [Github](https://github.com/Syrup-Studios/guidingit)
 
 
