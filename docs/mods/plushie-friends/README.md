@@ -1,4 +1,4 @@
-### Plushie Friends
+# Plushie Friends
 
 **Plushie Friends** is a simple Fabric mod that lets you turn players into cute, collectible 3D plushies to decorate your world!
 
