@@ -14,11 +14,14 @@ let
     propagatedBuildInputs = with pkgs.python313Packages; [
       beautifulsoup4
       packaging
+      mkdocs
+      pymdown-extensions
     ];
 
     doCheck = false;
   };
-    mkdocs-video = pkgs.python313Packages.buildPythonPackage rec {
+
+  mkdocs-video = pkgs.python313Packages.buildPythonPackage rec {
     pname = "mkdocs-video";
     version = "1.5.0";
     format = "wheel";
@@ -31,11 +34,14 @@ let
     propagatedBuildInputs = with pkgs.python313Packages; [
       beautifulsoup4
       packaging
+      mkdocs
+      lxml
     ];
 
     doCheck = false;
   };
-      mkdocs-open-in-new-tab = pkgs.python313Packages.buildPythonPackage rec {
+
+  mkdocs-open-in-new-tab = pkgs.python313Packages.buildPythonPackage rec {
     pname = "mkdocs-open-in-new-tab";
     version = "1.0.8";
     format = "wheel";
@@ -48,6 +54,7 @@ let
     propagatedBuildInputs = with pkgs.python313Packages; [
       beautifulsoup4
       packaging
+      mkdocs
     ];
 
     doCheck = false;
@@ -68,9 +75,11 @@ pkgs.mkShell {
       mkdocs-awesome-nav
       mkdocstrings
       mkdocs-autorefs
-      mkdocs-meta-descriptions-plugin
       mkdocs-minify-plugin
       pymdown-extensions
+      
+      # Reference external let-bindings explicitly, bypassing the ps attribute set search
+      mkdocs-meta-descriptions-plugin
       mkdocs-video
       mkdocs-open-in-new-tab
     ]))
