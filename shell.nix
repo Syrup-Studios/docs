@@ -77,8 +77,6 @@ pkgs.mkShell {
       mkdocs-autorefs
       mkdocs-minify-plugin
       pymdown-extensions
-      
-      # Reference external let-bindings explicitly, bypassing the ps attribute set search
       mkdocs-meta-descriptions-plugin
       mkdocs-video
       mkdocs-open-in-new-tab
