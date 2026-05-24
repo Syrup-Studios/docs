@@ -105,13 +105,6 @@ plugins:
       type: timeago
       enable_creation_date: true
       fallback_to_build_date: false
-  - minify:
-      minify_html: !ENV [ ENABLE_MINIFY, false ]
-      minify_js: !ENV [ ENABLE_MINIFY, false ]
-      minify_css: !ENV [ ENABLE_MINIFY, false ]
-      htmlmin_opts:
-        remove_comments: !ENV [ ENABLE_REMOVE_COMMENTS, false ]
-      cache_safe: true
   - glightbox:
       touchNavigation: true
       loop: true
@@ -122,13 +115,3 @@ plugins:
       draggable: false
       auto_caption: true
       caption_position: bottom
-
-validation:
-  nav:
-    omitted_files: info
-    not_found: warn
-    absolute_links: info
-  links:
-    not_found: warn
-    absolute_links: info
-    unrecognized_links: info

@@ -3,7 +3,7 @@ Windows:
 `.\venv\Scripts\activate  `
 
 Nixos:
-`nix-shell`
+`nix develop`
 
 `mkdocs serve`
 

@@ -9,4 +9,3 @@ mkdocs-awesome-nav
 mkdocstrings
 mkdocs-autorefs
 mkdocs-meta-descriptions-plugin
-mkdocs-minify-plugin
